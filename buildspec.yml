@@ -8,8 +8,7 @@ commands:
 - $(aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-
 email)
 
-- REPOSITORY_URI=322749112518.dkr.ecr.ap-northeast-
-2.amazonaws.com/api-repo # web 이미지가 저장된 ECR 리포지토리 URL을 입력합니다. ex.
+- REPOSITORY_URI=130783193273.dkr.ecr.ap-northeast-2.amazonaws.com/dongsupark_repository # web 이미지가 저장된 ECR 리포지토리 URL을 입력합니다. ex.
 
 REPOSITORY_URI={ECR-API-REPO-URL}
 - IMAGE_TAG=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
